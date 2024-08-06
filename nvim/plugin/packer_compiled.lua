@@ -95,7 +95,7 @@ _G.packer_plugins = {
     url = "https://github.com/neoclide/coc.nvim"
   },
   ["dashboard-nvim"] = {
-    config = { "\27LJ\2\n\2\0\0\6\0\t\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\a\0005\3\4\0004\4\3\0005\5\3\0>\5\1\4=\4\5\0034\4\0\0=\4\6\3=\3\b\2B\0\2\1K\0\1\0\vconfig\1\0\1\vconfig\0\vfooter\vcenter\1\0\2\vfooter\0\vcenter\0\1\0\b\tdesc\16description\bkey3shortcut key in dashboard buffer not keymap !!\fdesc_hl\ngroup\15key_format\n [%s]\ficon_hl\ngroup\vaction\5\ticon\5\vkey_hl\ngroup\nsetup\14dashboard\frequire\0" },
+    config = { "\27LJ\2\n\2\0\0\6\0\t\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\a\0005\3\4\0004\4\3\0005\5\3\0>\5\1\4=\4\5\0034\4\0\0=\4\6\3=\3\b\2B\0\2\1K\0\1\0\vconfig\1\0\1\vconfig\0\vfooter\vcenter\1\0\2\vcenter\0\vfooter\0\1\0\b\fdesc_hl\ngroup\bkey3shortcut key in dashboard buffer not keymap !!\tdesc\16description\15key_format\n [%s]\ticon\5\ficon_hl\ngroup\vaction\5\vkey_hl\ngroup\nsetup\14dashboard\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -106,6 +106,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lucas/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
+  },
+  ["git-conflict.nvim"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17git-conflict\frequire\0" },
+    loaded = true,
+    path = "/home/lucas/.local/share/nvim/site/pack/packer/start/git-conflict.nvim",
+    url = "https://github.com/akinsho/git-conflict.nvim"
   },
   harpoon = {
     loaded = true,
@@ -153,7 +159,7 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-notify"] = {
-    config = { "\27LJ\2\n@\0\0\3\0\5\1\a6\0\0\0009\0\1\0006\2\2\0009\2\3\0029\2\4\2\24\2\0\2D\0\2\0\nlines\6o\bvim\nfloor\tmath\1€€ ÿ\3B\0\0\3\0\5\1\a6\0\0\0009\0\1\0006\2\2\0009\2\3\0029\2\4\2\24\2\0\2D\0\2\0\fcolumns\6o\bvim\nfloor\tmath\1€€ ÿ\3K\0\1\5\0\4\0\a6\1\0\0009\1\1\0019\1\2\1\18\3\0\0005\4\3\0B\1\3\1K\0\1\0\1\0\1\vzindex\3d\24nvim_win_set_config\bapi\bvim‚\3\1\0\6\0\17\0\0266\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0003\3\4\0=\3\5\0023\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\0016\0\n\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0006\0\n\0009\0\v\0009\0\f\0'\2\r\0'\3\14\0'\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\3\fnoremap\2\vsilent\2\tdesc\30Dismiss All NotificationsN<cmd>lua require('notify').dismiss({ silent = true, pending = true })<CR>\15<leader>un\6n\20nvim_set_keymap\bapi\bvim\fon_open\0\14max_width\0\15max_height\0\1\0\5\vstages\vstatic\ftimeout\3¸\23\fon_open\0\14max_width\0\15max_height\0\nsetup\vnotify\frequire\0" },
+    config = { "\27LJ\2\n@\0\0\3\0\5\1\a6\0\0\0009\0\1\0006\2\2\0009\2\3\0029\2\4\2\24\2\0\2D\0\2\0\nlines\6o\bvim\nfloor\tmath\1€€ ÿ\3B\0\0\3\0\5\1\a6\0\0\0009\0\1\0006\2\2\0009\2\3\0029\2\4\2\24\2\0\2D\0\2\0\fcolumns\6o\bvim\nfloor\tmath\1€€ ÿ\3K\0\1\5\0\4\0\a6\1\0\0009\1\1\0019\1\2\1\18\3\0\0005\4\3\0B\1\3\1K\0\1\0\1\0\1\vzindex\3d\24nvim_win_set_config\bapi\bvim‚\3\1\0\6\0\17\0\0266\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0003\3\4\0=\3\5\0023\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\0016\0\n\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0006\0\n\0009\0\v\0009\0\f\0'\2\r\0'\3\14\0'\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\3\vsilent\2\fnoremap\2\tdesc\30Dismiss All NotificationsN<cmd>lua require('notify').dismiss({ silent = true, pending = true })<CR>\15<leader>un\6n\20nvim_set_keymap\bapi\bvim\fon_open\0\14max_width\0\15max_height\0\1\0\5\vstages\vstatic\15max_height\0\14max_width\0\ftimeout\3¸\23\fon_open\0\nsetup\vnotify\frequire\0" },
     loaded = true,
     path = "/home/lucas/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
@@ -240,6 +246,11 @@ _G.packer_plugins = {
     path = "/home/lucas/.local/share/nvim/site/pack/packer/start/vim-multiple-cursors",
     url = "https://github.com/terryma/vim-multiple-cursors"
   },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/home/lucas/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0" },
     loaded = true,
@@ -249,22 +260,26 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: which-key.nvim
-time([[Config for which-key.nvim]], true)
-try_loadstring("\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0", "config", "which-key.nvim")
-time([[Config for which-key.nvim]], false)
+-- Config for: git-conflict.nvim
+time([[Config for git-conflict.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17git-conflict\frequire\0", "config", "git-conflict.nvim")
+time([[Config for git-conflict.nvim]], false)
 -- Config for: typescript-tools.nvim
 time([[Config for typescript-tools.nvim]], true)
 try_loadstring("\27LJ\2\nB\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\21typescript-tools\frequire\0", "config", "typescript-tools.nvim")
 time([[Config for typescript-tools.nvim]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+try_loadstring("\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0", "config", "which-key.nvim")
+time([[Config for which-key.nvim]], false)
+-- Config for: nvim-notify
+time([[Config for nvim-notify]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\5\1\a6\0\0\0009\0\1\0006\2\2\0009\2\3\0029\2\4\2\24\2\0\2D\0\2\0\nlines\6o\bvim\nfloor\tmath\1€€ ÿ\3B\0\0\3\0\5\1\a6\0\0\0009\0\1\0006\2\2\0009\2\3\0029\2\4\2\24\2\0\2D\0\2\0\fcolumns\6o\bvim\nfloor\tmath\1€€ ÿ\3K\0\1\5\0\4\0\a6\1\0\0009\1\1\0019\1\2\1\18\3\0\0005\4\3\0B\1\3\1K\0\1\0\1\0\1\vzindex\3d\24nvim_win_set_config\bapi\bvim‚\3\1\0\6\0\17\0\0266\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0003\3\4\0=\3\5\0023\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\0016\0\n\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0006\0\n\0009\0\v\0009\0\f\0'\2\r\0'\3\14\0'\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\3\vsilent\2\fnoremap\2\tdesc\30Dismiss All NotificationsN<cmd>lua require('notify').dismiss({ silent = true, pending = true })<CR>\15<leader>un\6n\20nvim_set_keymap\bapi\bvim\fon_open\0\14max_width\0\15max_height\0\1\0\5\vstages\vstatic\15max_height\0\14max_width\0\ftimeout\3¸\23\fon_open\0\nsetup\vnotify\frequire\0", "config", "nvim-notify")
+time([[Config for nvim-notify]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
--- Config for: nvim-notify
-time([[Config for nvim-notify]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\5\1\a6\0\0\0009\0\1\0006\2\2\0009\2\3\0029\2\4\2\24\2\0\2D\0\2\0\nlines\6o\bvim\nfloor\tmath\1€€ ÿ\3B\0\0\3\0\5\1\a6\0\0\0009\0\1\0006\2\2\0009\2\3\0029\2\4\2\24\2\0\2D\0\2\0\fcolumns\6o\bvim\nfloor\tmath\1€€ ÿ\3K\0\1\5\0\4\0\a6\1\0\0009\1\1\0019\1\2\1\18\3\0\0005\4\3\0B\1\3\1K\0\1\0\1\0\1\vzindex\3d\24nvim_win_set_config\bapi\bvim‚\3\1\0\6\0\17\0\0266\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0003\3\4\0=\3\5\0023\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\0016\0\n\0006\1\0\0'\3\1\0B\1\2\2=\1\1\0006\0\n\0009\0\v\0009\0\f\0'\2\r\0'\3\14\0'\4\15\0005\5\16\0B\0\5\1K\0\1\0\1\0\3\fnoremap\2\vsilent\2\tdesc\30Dismiss All NotificationsN<cmd>lua require('notify').dismiss({ silent = true, pending = true })<CR>\15<leader>un\6n\20nvim_set_keymap\bapi\bvim\fon_open\0\14max_width\0\15max_height\0\1\0\5\vstages\vstatic\ftimeout\3¸\23\fon_open\0\14max_width\0\15max_height\0\nsetup\vnotify\frequire\0", "config", "nvim-notify")
-time([[Config for nvim-notify]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

@@ -25,4 +25,9 @@ vim.keymap.set("n", "<leader>D", "\"+D", {desc = "Cut Clipboard"})
 -- Vim Coc
 vim.api.nvim_set_keymap('n', '[d', '<Plug>(coc-diagnostic-next-error)', { silent = true })
 vim.api.nvim_set_keymap('n', ']d', '<Plug>(coc-diagnostic-prev-error)', { silent = true })
-
+-- Tmux Vim navigator
+vim.keymap.set("n", "<C-h>", ":TmuxNavigateLeft<CR>")
+vim.keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR>")
+vim.keymap.set("n", "<C-k>", ":TmuxNavigateUp<CR>")
+vim.keymap.set("n", "<C-l>", ":TmuxNavigateRight<CR>")
+-- Emmet Nvim

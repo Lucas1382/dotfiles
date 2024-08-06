@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   use('jiangmiao/auto-pairs')
   use('tpope/vim-fugitive')
+  use('christoomey/vim-tmux-navigator')
   use('preservim/nerdtree')
   use('preservim/nerdcommenter')
   use('mattn/emmet-vim')
@@ -29,6 +30,9 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use 'neovim/nvim-lspconfig'
   use('hrsh7th/nvim-cmp')
+  use {'akinsho/git-conflict.nvim', tag = "*", config = function()
+  require('git-conflict').setup()
+end}
   use {
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
